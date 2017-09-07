@@ -1,5 +1,10 @@
 pg_port: 5432
 
+postgresql_version: 9.6
+postgres_service_name: postgresql
+postgresql_data_directory: /var/lib/postgresql/{{ postgresql_version }}/main
+postgresql_conf_directory: /etc/postgresql/{{ postgresql_version }}/main
+
 bundle_install: False
 
 postgresrep_role: skip
